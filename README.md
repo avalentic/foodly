@@ -1,6 +1,5 @@
 # Foodly - Flutter UI Project
----
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)    [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/Apache-2.0)  [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/iampawan/Flutter-UI-Kit/blob/master/licence.txt)
+[![Codemagic build status](https://api.codemagic.io/apps/5d9e1a6921a400126a04c659/5d9e1a6921a400126a04c658/status_badge.svg)](https://codemagic.io/apps/5d9e1a6921a400126a04c659/5d9e1a6921a400126a04c658/latest_build)  [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/Apache-2.0)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Foodly is my project in Flutter to see what can I do with the Flutter framework in UI designing. This is made with the help of the Sketch, and all code is written in Dart. All widgets are separated to keep clean code, and you can find all the code in the [/lib] folder.
 
@@ -8,16 +7,15 @@ I hope that this project will help someone with learning or searching for some n
 This project will be updated for long, as I will have time for it.
 
 If I helped you in any way, or love this project, you can always support me.
+
 [![GitHub stars](https://img.shields.io/github/stars/avalentic/foodly.svg?style=social&label=Star)](https://github.com/avalentic/foodly) [![GitHub forks](https://img.shields.io/github/forks/avalentic/foodly.svg?style=social&label=Fork)](https://github.com/avalentic/foodly/fork) [![GitHub watchers](https://img.shields.io/github/watchers/avalentic/foodly.svg?style=social&label=Watch)](https://github.com/avalentic/foodly) [![GitHub followers](https://img.shields.io/github/followers/avalentic.svg?style=social&label=Follow)](https://github.com/avalentic/foodly)
 [![Twitter Follow](https://img.shields.io/twitter/follow/avalentic2.svg?style=social)](https://twitter.com/avalentic2)
 
 # Screenshots
----
-<img height="480px" src="screenshots/1.png"><img height="480px" src="screenshots/2.png">
-<img height="480px" src="screenshots/3.png"><img height="480px" src="screenshots/4.png">
+<img height="480px" src="screenshots/1.png">  <img height="480px" src="screenshots/2.png">
+<img height="480px" src="screenshots/3.png">  <img height="480px" src="screenshots/4.png">
 
 # Project created and maintained by
----
 ## Antonio Valentic
 ##### Passionate Flutter developer
 
@@ -27,7 +25,6 @@ If I helped you in any way, or love this project, you can always support me.
 <a href="https://facebook.com/avalentic3"><img src="https://github.com/aritraroy/social-icons/blob/master/facebook-icon.png?raw=true" width="60"></a>
 
 # Donate
----
 
 > If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
 >
@@ -69,5 +66,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+```
 
 [/lib]: <https://github.com/avalentic/foodly/tree/master/lib>
