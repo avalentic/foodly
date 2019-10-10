@@ -16,7 +16,7 @@ If I helped you in any way, or love this project, you can always support me.
 <img height="480px" src="screenshots/3.png">  <img height="480px" src="screenshots/4.png">
 
 # Project created and maintained by
-## Antonio Valentic
+### Antonio Valentic
 ##### Passionate Flutter developer
 
 <a href="https://play.google.com/store/apps/dev?id=5098608087857992213"><img src="https://github.com/aritraroy/social-icons/blob/master/play-store-icon.png?raw=true" width="60"></a>
@@ -54,18 +54,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
 [/lib]: <https://github.com/avalentic/foodly/tree/master/lib>
