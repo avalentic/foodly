@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodly/ui/home.dart';
+import 'package:foodly/navigation_handler.dart';
 
 void main() => runApp(Foodly());
 
@@ -9,7 +9,7 @@ class Foodly extends StatelessWidget {
     return MaterialApp(
       title: 'Foodly',
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: NavigationHandler(),
     );
   }
 }

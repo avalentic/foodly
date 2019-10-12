@@ -9,29 +9,26 @@ import 'package:foodly/widgets/restaurant_small_card.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: MediaQuery.removePadding(
-        context: context,
-        removeTop: true,
-        child: ListView(
-          children: <Widget>[
-            Column(
-              children: <Widget>[
-                _buildTopContainer(),
-                _buildPopularTagsRow(),
-                _buildTagsContainer(),
-                _buildFeaturedRow(),
-                _buildFeaturedCards(),
-                _buildTop30Row(),
-                _buildTop30ListView(),
-                _buildNearbyRow(),
-                _buildNearbyListView(),
-              ],
-            ),
-          ],
-        ),
+    return MediaQuery.removePadding(
+      context: context,
+      removeTop: true,
+      child: ListView(
+        children: <Widget>[
+          Column(
+            children: <Widget>[
+              _buildTopContainer(),
+              _buildPopularTagsRow(),
+              _buildTagsContainer(),
+              _buildFeaturedRow(),
+              _buildFeaturedCards(),
+              _buildTop30Row(),
+              _buildTop30ListView(),
+              _buildNearbyRow(),
+              _buildNearbyListView(),
+            ],
+          ),
+        ],
       ),
-      bottomNavigationBar: _buildBottomNavigationBar(),
     );
   }
 }
@@ -413,61 +410,5 @@ _buildNearbyListView() {
         ),
       ],
     ),
-  );
-}
-
-_buildBottomNavigationBar() {
-  BottomNavigationBar(
-    backgroundColor: Color(0xffe9e9e9),
-    items: <BottomNavigationBarItem>[
-      BottomNavigationBarItem(
-        title: Text(
-          "Home",
-          style: TextStyle(
-            color: Color(0xff454f63),
-          ),
-        ),
-        icon: Icon(
-          Icons.home,
-          color: Color(0xff454f63),
-        ),
-      ),
-      BottomNavigationBarItem(
-        title: Text(
-          "Search",
-          style: TextStyle(
-            color: Color(0xff454f63),
-          ),
-        ),
-        icon: Icon(
-          Icons.search,
-          color: Color(0xff454f63),
-        ),
-      ),
-      BottomNavigationBarItem(
-        title: Text(
-          "Nearby",
-          style: TextStyle(
-            color: Color(0xff454f63),
-          ),
-        ),
-        icon: Icon(
-          Icons.add_location,
-          color: Color(0xff454f63),
-        ),
-      ),
-      BottomNavigationBarItem(
-        title: Text(
-          "Account",
-          style: TextStyle(
-            color: Color(0xff454f63),
-          ),
-        ),
-        icon: Icon(
-          Icons.account_circle,
-          color: Color(0xff454f63),
-        ),
-      ),
-    ],
   );
 }
