@@ -4,7 +4,6 @@ class User extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _width = MediaQuery.of(context).size.width;
-    debugPrint(_width.toString());
 
     return Container(
       width: _width,
