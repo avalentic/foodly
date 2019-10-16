@@ -9,6 +9,9 @@ class Foodly extends StatelessWidget {
     return MaterialApp(
       title: 'Foodly',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        accentColor: Color(0xfff69223),
+      ),
       home: NavigationHandler(),
     );
   }

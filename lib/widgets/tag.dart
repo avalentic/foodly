@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Tag extends StatelessWidget {
-  final String name;
-  Tag(this.name);
+  final String text;
+  final Color backgroundColor, fontColor, borderColor;
+  Tag({this.text, this.backgroundColor, this.borderColor, this.fontColor});
 
   @override
   Widget build(BuildContext context) {
@@ -10,19 +11,23 @@ class Tag extends StatelessWidget {
       onTap: () { debugPrint("TAP!"); },
       child: Container(
         width: 100,
-        height: 30,
+        height: 40,
         decoration: new BoxDecoration(
-          color: Color(0xfff0f0f0),
-          borderRadius: BorderRadius.circular(13),
+          color: backgroundColor,
+          border: Border.all(
+            color: borderColor,
+            width: 1
+          ),
+          borderRadius: BorderRadius.circular(20),
         ),
         margin: const EdgeInsets.all(5.0),
         child: Center(
           child: Text(
-            name,
+            text,
             style: TextStyle(
               fontFamily: 'Roboto',
-              color: Color(0xff454f63),
-              fontSize: 15,
+              color: fontColor,
+              fontSize: 14,
               fontWeight: FontWeight.w400,
               fontStyle: FontStyle.normal,
             ),

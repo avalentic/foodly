@@ -128,10 +128,10 @@ _buildTagsContainer() {
     child: ListView(
       scrollDirection: Axis.horizontal,
       children: <Widget>[
-        Tag("Chinese"),
-        Tag("India"),
-        Tag("Steambot"),
-        Tag("Buffet"),
+        Tag(text: "Chinese", backgroundColor: Color(0xfff0f0f0), borderColor: Color(0xff454f63), fontColor: Color(0xff454f63)),
+        Tag(text: "India", backgroundColor: Color(0xfff0f0f0), borderColor: Color(0xff454f63), fontColor: Color(0xff454f63)),
+        Tag(text: "Steambot", backgroundColor: Color(0xfff0f0f0), borderColor: Color(0xff454f63), fontColor: Color(0xff454f63)),
+        Tag(text: "Buffet", backgroundColor: Color(0xfff0f0f0), borderColor: Color(0xff454f63), fontColor: Color(0xff454f63)),
       ],
     ),
   );
