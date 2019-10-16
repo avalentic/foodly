@@ -218,61 +218,75 @@ class SearchState extends State<Search> with SingleTickerProviderStateMixin {
           child: TabBarView(
             controller: _tabController,
             children: <Widget>[
-              ListView(
-                children: <Widget>[
-                  SearchCard(
-                    restaurantName: "Rocku Yakiniku",
-                    restaurantAddress:
-                        "Desa Petalling, Kuala Lumpur (B-G-02 & B-G-03 Arcadia Plaza Long Text...",
-                    restaurantImage: "images/restaurant1.jpg",
-                    rating: 4.9,
-                    color: Color(0xff4e84e2),
+              MediaQuery.removePadding(
+                context: context,
+                removeTop: true,
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 18.0),
+                  child: ListView(
+                    children: <Widget>[
+                      SearchCard(
+                        restaurantName: "Rocku Yakiniku",
+                        restaurantAddress:
+                            "Desa Petalling, Kuala Lumpur (B-G-02 & B-G-03 Arcadia Plaza Long Text...",
+                        restaurantImage: "images/restaurant1.jpg",
+                        rating: 4.9,
+                        color: Color(0xff4e84e2),
+                      ),
+                      SearchCard(
+                        restaurantName: "Tai Ping Chinese Cuisine",
+                        restaurantAddress:
+                            "Kuala Lumpur City Centre Wilayah Persekutuan (5 Jalan Conlay)",
+                        restaurantImage: "images/restaurant2.jpg",
+                        rating: 3.5,
+                        color: Color(0xff8cc540),
+                      ),
+                      SearchCard(
+                        restaurantName: "Seven Happy Friends Bar & R...",
+                        restaurantAddress:
+                            "Desa Petalling, Kuala Lumpur (B-G-02 & B-G-03 Arcadia Plaza Long Text...",
+                        restaurantImage: "images/restaurant3.jpg",
+                        rating: 4.5,
+                        color: Color(0xffc1c1c1),
+                      ),
+                    ],
                   ),
-                  SearchCard(
-                    restaurantName: "Tai Ping Chinese Cuisine",
-                    restaurantAddress:
-                        "Kuala Lumpur City Centre Wilayah Persekutuan (5 Jalan Conlay)",
-                    restaurantImage: "images/restaurant2.jpg",
-                    rating: 3.5,
-                    color: Color(0xff8cc540),
-                  ),
-                  SearchCard(
-                    restaurantName: "Seven Happy Friends Bar & R...",
-                    restaurantAddress:
-                        "Desa Petalling, Kuala Lumpur (B-G-02 & B-G-03 Arcadia Plaza Long Text...",
-                    restaurantImage: "images/restaurant3.jpg",
-                    rating: 4.5,
-                    color: Color(0xffc1c1c1),
-                  ),
-                ],
+                ),
               ),
-              ListView(
-                children: <Widget>[
-                  SearchCard(
-                    restaurantName: "Rocku Yakiniku",
-                    restaurantAddress:
-                        "Desa Petalling, Kuala Lumpur (B-G-02 & B-G-03 Arcadia Plaza Long Text...",
-                    restaurantImage: "images/restaurant1.jpg",
-                    rating: 4.9,
-                    color: Color(0xff4e84e2),
+              MediaQuery.removePadding(
+                context: context,
+                removeTop: true,
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 18.0),
+                  child: ListView(
+                    children: <Widget>[
+                      SearchCard(
+                        restaurantName: "Rocku Yakiniku",
+                        restaurantAddress:
+                            "Desa Petalling, Kuala Lumpur (B-G-02 & B-G-03 Arcadia Plaza Long Text...",
+                        restaurantImage: "images/restaurant1.jpg",
+                        rating: 4.9,
+                        color: Color(0xff4e84e2),
+                      ),
+                      SearchCard(
+                        restaurantName: "Tai Ping Chinese Cuisine",
+                        restaurantAddress:
+                            "Kuala Lumpur City Centre Wilayah Persekutuan (5 Jalan Conlay)",
+                        restaurantImage: "images/restaurant2.jpg",
+                        rating: 3.5,
+                        color: Color(0xff8cc540),
+                      ),
+                      SearchCard(
+                        restaurantName: "Seven Happy Friends Bar & R...",
+                        restaurantAddress:
+                            "Desa Petalling, Kuala Lumpur (B-G-02 & B-G-03 Arcadia Plaza Long Text...",
+                        restaurantImage: "images/restaurant3.jpg",
+                        rating: 4.5,
+                        color: Color(0xffc1c1c1),
+                      ),
+                    ],
                   ),
-                  SearchCard(
-                    restaurantName: "Seven Happy Friends Bar & R...",
-                    restaurantAddress:
-                        "Desa Petalling, Kuala Lumpur (B-G-02 & B-G-03 Arcadia Plaza Long Text...",
-                    restaurantImage: "images/restaurant3.jpg",
-                    rating: 4.5,
-                    color: Color(0xffc1c1c1),
-                  ),
-                  SearchCard(
-                    restaurantName: "Tai Ping Chinese Cuisine",
-                    restaurantAddress:
-                        "Kuala Lumpur City Centre Wilayah Persekutuan (5 Jalan Conlay)",
-                    restaurantImage: "images/restaurant2.jpg",
-                    rating: 3.5,
-                    color: Color(0xff8cc540),
-                  ),
-                ],
+                ),
               ),
             ],
           ),

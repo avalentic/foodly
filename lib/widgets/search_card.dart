@@ -5,39 +5,55 @@ class SearchCard extends StatelessWidget {
   final double rating;
   final String restaurantName, restaurantAddress, restaurantImage;
   final Color color;
-  SearchCard({this.restaurantName, this.restaurantAddress, this.restaurantImage, this.rating, this.color});
+  SearchCard(
+      {this.restaurantName,
+      this.restaurantAddress,
+      this.restaurantImage,
+      this.rating,
+      this.color});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 170,
-      margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            color: Color(0x29000000),
-            offset: Offset(0, 3),
-            blurRadius: 6,
-            spreadRadius: 0,
+    return Stack(
+      children: <Widget>[
+        Container(
+          height: 170.0,
+          margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+          decoration: BoxDecoration(
+            color: color,
+            boxShadow: [
+              BoxShadow(
+                color: Color(0x29000000),
+                offset: Offset(0, 3),
+                blurRadius: 6,
+                spreadRadius: 0,
+              ),
+            ],
+            borderRadius: BorderRadius.circular(8.0),
           ),
-        ],
-        borderRadius: BorderRadius.circular(8.0),
-      ),
-      child: Column(
-        children: <Widget>[
-          Row(
+        ),
+        Container(
+          height: 170.0,
+          margin: const EdgeInsets.fromLTRB(22.0, 8.0, 16.0, 8.0),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            boxShadow: [
+              BoxShadow(
+                color: Color(0x29000000),
+                offset: Offset(0, 3),
+                blurRadius: 6,
+                spreadRadius: 0,
+              ),
+            ],
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(8.0),
+              bottomRight: Radius.circular(8.0),
+            ),
+          ),
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Container(
-                width: 4,
-                height: 170,
-                decoration: new BoxDecoration(
-                  color: color,
-                  borderRadius: BorderRadius.circular(1.0),
-                ),
-              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -140,34 +156,6 @@ class SearchCard extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  Container(
-                    width: 200.0,
-                    height: 30.0,
-                    margin: const EdgeInsets.only(left: 28.0, top: 12.0),
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: <Widget>[
-                        Tag(
-                          text: "Japanese",
-                          backgroundColor: Color(0xfff69223),
-                          borderColor: Color(0xffb76a15),
-                          fontColor: Colors.white,
-                        ),
-                        Tag(
-                          text: "Sushi",
-                          backgroundColor: Color(0xfff69223),
-                          borderColor: Color(0xffb76a15),
-                          fontColor: Colors.white,
-                        ),
-                        Tag(
-                          text: "Buffet",
-                          backgroundColor: Color(0xfff69223),
-                          borderColor: Color(0xffb76a15),
-                          fontColor: Colors.white,
-                        ),
-                      ],
-                    ),
-                  ),
                 ],
               ),
               Container(
@@ -181,8 +169,41 @@ class SearchCard extends StatelessWidget {
               ),
             ],
           ),
-        ],
-      ),
+        ),
+        Container(
+          height: 30.0,
+          margin: const EdgeInsets.only(left: 45.0, top: 130.0, right: 16.0),
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: <Widget>[
+              Tag(
+                text: "Japanese",
+                backgroundColor: Color(0xfff69223),
+                borderColor: Color(0xffb76a15),
+                fontColor: Colors.white,
+              ),
+              Tag(
+                text: "Sushi",
+                backgroundColor: Color(0xfff69223),
+                borderColor: Color(0xffb76a15),
+                fontColor: Colors.white,
+              ),
+              Tag(
+                text: "Buffet",
+                backgroundColor: Color(0xfff69223),
+                borderColor: Color(0xffb76a15),
+                fontColor: Colors.white,
+              ),
+              Tag(
+                text: "Buffet",
+                backgroundColor: Color(0xfff69223),
+                borderColor: Color(0xffb76a15),
+                fontColor: Colors.white,
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
