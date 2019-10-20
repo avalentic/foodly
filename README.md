@@ -13,8 +13,8 @@ If I helped you in any way, or love this project, you can always support me.
 
 # Screenshots
 <img height="480px" src="screenshots/1.png">  <img height="480px" src="screenshots/2.png">
-<img height="480px" src="screenshots/3.png">  <img height="480px" src="screenshots/4.png">
-<img height="480px" src="screenshots/6.png">  <img height="480px" src="screenshots/5.png">
+<img height="480px" src="screenshots/3.png">  <img height="480px" src="screenshots/6.png">
+<img height="480px" src="screenshots/7.png">  <img height="480px" src="screenshots/5.png">
 
 # Project created and maintained by
 ### Antonio Valentic

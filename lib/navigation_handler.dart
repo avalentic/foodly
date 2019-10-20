@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodly/ui/home.dart';
 import 'package:foodly/ui/search.dart';
-import 'package:foodly/ui/location.dart';
+import 'package:foodly/ui/add_new_restaurant.dart';
 import 'package:foodly/ui/user.dart';
 
 class NavigationHandler extends StatefulWidget {
@@ -16,7 +16,7 @@ class NavigationHandlerState extends State<NavigationHandler> {
   final List<Widget> _bottomNavBarFragments = [
     Home(),
     Search(),
-    Location(),
+    AddNewRestaurant(),
     User(),
   ];
 
@@ -66,7 +66,7 @@ class NavigationHandlerState extends State<NavigationHandler> {
         ),
         BottomNavigationBarItem(
           title: Text(
-            "Nearby",
+            "Add",
             style: TextStyle(
               color: Color(0xff454f63),
             ),
