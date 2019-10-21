@@ -62,19 +62,35 @@ class _AddNewRestaurantState extends State<AddNewRestaurant> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 8.0),
-                    child: _buildTextInput("Business Name", Icons.store, TextInputType.text),
+                    child: _buildTextInput(
+                      "Business Name",
+                      Icons.store,
+                      TextInputType.text,
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 18.0),
-                    child: _buildTextInput("Phone Number", Icons.phone, TextInputType.phone),
+                    child: _buildTextInput(
+                      "Phone Number",
+                      Icons.phone,
+                      TextInputType.phone,
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 18.0),
-                    child: _buildTextInput("Email", Icons.email, TextInputType.emailAddress),
+                    child: _buildTextInput(
+                      "Email",
+                      Icons.email,
+                      TextInputType.emailAddress,
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 18.0),
-                    child: _buildTextInput("Website", Icons.language, TextInputType.url),
+                    child: _buildTextInput(
+                      "Website",
+                      Icons.language,
+                      TextInputType.url,
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 50.0),
@@ -332,32 +348,43 @@ class _AddNewRestaurantState extends State<AddNewRestaurant> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 18.0),
-                    child: _buildTextInput("Postcode", Icons.date_range, TextInputType.number),
+                    child: _buildTextInput(
+                      "Postcode",
+                      Icons.date_range,
+                      TextInputType.number,
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 18.0),
-                    child: _buildTextInput("Street Address", Icons.pin_drop, TextInputType.text),
+                    child: _buildTextInput(
+                      "Street Address",
+                      Icons.pin_drop,
+                      TextInputType.text,
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 50.0, bottom: 30.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
-                        Container(
-                          width: 115,
-                          height: 35,
-                          decoration: new BoxDecoration(
-                            color: Color(0xff8cc540),
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Add",
-                              style: TextStyle(
-                                fontFamily: "Roboto",
-                                color: Colors.white,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.w600,
+                        FlatButton(
+                          onPressed: () {},
+                          child: Container(
+                            width: 115,
+                            height: 35,
+                            decoration: new BoxDecoration(
+                              color: Color(0xff8cc540),
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Add",
+                                style: TextStyle(
+                                  fontFamily: "Roboto",
+                                  color: Colors.white,
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
                             ),
                           ),

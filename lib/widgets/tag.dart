@@ -8,21 +8,20 @@ class Tag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () { debugPrint("TAP!"); },
+      onTap: () {
+        debugPrint("TAP!");
+      },
       child: Container(
-        width: 100,
-        height: 40,
-        decoration: new BoxDecoration(
-          color: backgroundColor,
-          border: Border.all(
-            color: borderColor,
-            width: 1
+        margin: const EdgeInsets.only(left: 10.0),
+        child: Chip(
+          backgroundColor: backgroundColor,
+          shape: StadiumBorder(
+            side: BorderSide(
+              color: borderColor,
+              width: 1.0,
+            ),
           ),
-          borderRadius: BorderRadius.circular(20),
-        ),
-        margin: const EdgeInsets.all(5.0),
-        child: Center(
-          child: Text(
+          label: Text(
             text,
             style: TextStyle(
               fontFamily: 'Roboto',
