@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodly/ui/restaurant.dart';
 
 class RestaurantSmallCard extends StatelessWidget {
   final String name, address, tags, image;
@@ -7,7 +8,13 @@ class RestaurantSmallCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => Restaurant(),
+          ),
+        );
+      },
       child: Container(
         width: 310.0,
         height: 90.0,

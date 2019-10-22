@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodly/ui/restaurant.dart';
 
 class RestaurantCard extends StatelessWidget {
   final double rating;
@@ -9,7 +10,13 @@ class RestaurantCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => Restaurant(),
+          ),
+        );
+      },
       child: Container(
         width: 170.0,
         height: 190.0,

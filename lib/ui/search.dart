@@ -165,9 +165,8 @@ class SearchState extends State<Search> with SingleTickerProviderStateMixin {
                 ),
               ),
               Container(
-                width: _width,
-                height: 49.0,
-                margin: const EdgeInsets.only(top: 8.0),
+                height: 48.0,
+                margin: const EdgeInsets.only(top: 9.0),
                 child: DefaultTabController(
                   length: 2,
                   child: Scaffold(
@@ -186,9 +185,6 @@ class SearchState extends State<Search> with SingleTickerProviderStateMixin {
                                 style: TextStyle(
                                   fontFamily: 'Roboto',
                                   color: Color(0xff454f63),
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.normal,
                                 ),
                               ),
                             ),
@@ -198,9 +194,6 @@ class SearchState extends State<Search> with SingleTickerProviderStateMixin {
                                 style: TextStyle(
                                   fontFamily: 'Roboto',
                                   color: Color(0xff454f63),
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.normal,
                                 ),
                               ),
                             ),
